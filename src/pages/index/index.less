@@ -1,0 +1,142 @@
+.workbench-wrap {
+  .fixed-top-calendar {
+    position: fixed;
+    width: 100%;
+    top: 82px;
+    z-index: 2;
+    background-color: #fff;
+    .date-x-wrap {
+      min-width: 101%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      white-space: nowrap;
+      padding: 24px 0 12px;
+      .x-scroll-item {
+        display: inline-block;
+        text-align: center;
+        .item-date-text {
+          margin-top: 8px;
+          padding: 12px;
+          min-width: 36px;
+        }
+        .item-date-text.current {
+          background-color: #2c58c6;
+          color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+    .current-date-text {
+      font-size: 34px;
+      // font-weight: bold;
+      text-align: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 12px;
+    }
+  }
+  .at-tabs {
+    .at-tabs__header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      z-index: 2;
+    }
+    .at-tabs__body {
+      margin-top: 82px;
+    }
+  }
+}
+
+.tab-plan-scroll {
+  background-color: #fff;
+  .time-line-wrap {
+    position: relative;
+    margin-top: 200px;
+    .time-line-bottom {
+      padding: 0 24px;
+      .time-line-item {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .at-divider {
+          z-index: 1;
+        }
+      }
+    }
+    .activity-item {
+      position: absolute;
+      background-color: rgba(177, 188, 254, 0.5);
+      border-radius: 16px;
+      border-left: 6px solid #0000cd;
+      left: 112px;
+      right: 0;
+      z-index: 2;
+      color: #0000ff;
+      padding: 0 12px;
+      .activity-content {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-top: 8px;
+      }
+    }
+  }
+}
+.report-scrollview {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 24px;
+  .at-article__2 {
+    font-weight: 500;
+  }
+  .at-article__section {
+    margin-bottom: 48px;
+    .at-article__h3 {
+      font-size: 28px;
+      color: #333;
+      font-weight: 500;
+    }
+  }
+  .future-plan-title {
+    margin-top: 48px;
+  }
+  .at-article__section.danger-section {
+    .at-article__p {
+      margin-top: 12px;
+    }
+    .at-article__p.flex-p {
+      .sub-flex-p {
+        display: flex;
+        align-items: baseline;
+        .flex-content {
+          display: flex;
+          align-items: baseline;
+          margin-top: 8px;
+          .flex-content-title {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-btn {
+  .add-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+.at-fab.add-btn {
+  background: none;
+  box-shadow: none;
+  position: fixed;
+  right: 48px;
+  bottom: 48px;
+  z-index: 2;
+}

@@ -1,0 +1,34 @@
+$color-brand: #2c58c6;
+@import "~taro-ui/dist/style/index.scss";
+
+@font-face {
+  font-family: "iconfont";
+  src: url(./resource/font/iconfont.ttf) format("truetype"),
+    url(./resource/font/iconfont.woff) format("woff"),
+    url(./resource/font/iconfont.woff2) format("woff2");
+}
+.iconfont {
+  font-family: "iconfont";
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex1 {
+  flex: 1;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.colorF {
+  color: #fff;
+}
