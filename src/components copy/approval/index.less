@@ -1,0 +1,72 @@
+.approval-c-wrap {
+  overflow: hidden;
+
+  .approval-c-item {
+    padding: 20px 0;
+
+    .approval-c-content {
+      display: flex;
+    }
+
+    .approval-c-circle {
+      width: 16px;
+      height: 16px;
+      background-color: #999999;
+      border-radius: 50%;
+      margin-right: 32px;
+      position: relative;
+      z-index: 3;
+      margin-top: 12px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 20px;
+        left: 8px;
+        width: 0px;
+        height: 120px;
+        border-right: 2px dashed #eee;
+        z-index: 1;
+      }
+
+      &.done {
+        background-color: #2c58c6;
+      }
+
+      &.process {
+        background-color: #c41d7f;
+      }
+    }
+
+    &:last-child {
+      .approval-c-circle {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .approval-c-result {
+      font-size: 32px;
+      color: #333333;
+
+      &.done {
+        color: #52c41a;
+      }
+
+      &.process {
+        color: #c41d7f;
+      }
+    }
+
+    .approval-c-name {
+      font-size: 28px;
+      color: #999999;
+      margin-top: 10px;
+    }
+
+    .approval-c-time {
+      padding-top: 16px;
+    }
+  }
+}

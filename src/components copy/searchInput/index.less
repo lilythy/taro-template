@@ -1,0 +1,35 @@
+.c-si {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 12px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 8px;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 24px 0 24px;
+  &__input {
+    flex: 1;
+    height: 64px;
+    padding-left: 20px;
+    background: transparent;
+
+    // h5样式兼容
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+  }
+  &__input-plc {
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    color: #999999;
+    font-weight: 400;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+  }
+}

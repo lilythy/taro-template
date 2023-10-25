@@ -1,0 +1,100 @@
+.customeTable{
+  width: 702px;
+  border: 1px solid #ccc;
+  margin: auto;
+  .tableHeader{
+    height: 78px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%);
+    display: flex;
+    align-items: center;
+    .tableTd{
+      flex: 1;
+      width: fit-content;
+      padding: 20px;
+      padding-left: 24px;
+      box-sizing: border-box;
+      font-family: PingFangSC-Medium;
+      font-size: 26px;
+      font-weight: normal;
+    }
+  }
+  .tableBody{
+    .tableRow{
+      display: flex;
+      .tableTr{
+        flex: 1;
+        width: fit-content;
+        padding: 20px;
+        padding-left: 24px;
+        box-sizing: border-box;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        font-weight: normal;
+        border: 1px solid #ccc;
+        .subtr{
+          border-bottom: 1px solid #ccc;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 10px 0;
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+        &:first-child{
+          display: flex;
+          align-items: center;
+        }
+        &:last-child{
+          display: flex;
+          align-items: center;
+          border-right: none;
+        }
+        .uploadIcon{
+          width: 80px;
+          height: 80px;
+          border-radius: 4px;
+          margin-bottom: 12px;
+        }
+        .videoExtral{
+          font-family: PingFangSC-Regular;
+          font-size: 24px;
+          font-weight: normal;
+          color: #333;
+          margin-bottom: 12px;
+        }
+        .videoScipt{
+          display: flex;
+          align-items: center;
+          .videoLable{
+            border-radius: 2px;
+            opacity: 1;
+            background: #e0e0e0;
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            padding: 0  4px;
+            font-size: 20px;
+            color: #999;
+            line-height: 1;
+            height: 28px;
+            .triangle{
+              border: 8px solid #999;
+              border-top: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid transparent;
+              margin-left: 5px;
+            }
+          }
+          .videoDuration{
+            font-family: PingFangSC-Regular;
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 26px;
+            letter-spacing: 0px;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}

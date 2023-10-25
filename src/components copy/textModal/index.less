@@ -1,0 +1,85 @@
+.container{
+    background: rgba(0,0,0, 0.6);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    // opacity: 0.6;
+    .popup{
+        position: fixed;
+        border-radius: 16rpx 16rpx 0px 0px;
+        // height: 610rpx;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        bottom: 0;
+        &-header{
+            text-align: center;
+            height: 98rpx;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .header-title{
+                font-family: PingFangSC-Medium;
+                font-size: 36rpx;
+                color: #333;
+                font-weight: 500;
+            }
+            .close-modal{
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: .32rem;
+            }
+        }
+        &-body{
+            display: flex;
+            flex-direction: row;
+            padding: 40px 30px 40px 30px;
+            word-break: break-all;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #eee;
+            .body-item{
+                flex:1;
+                .item-icon{
+                   display:block;
+                    width: 120rpx;
+                    height: 120rpx;
+                    margin: 0 auto;
+                    margin-bottom: 24rpx;
+                }
+                .item-text{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        &-footer{
+            border-top: 1px solid #eee;
+            padding-top: 24rpx;
+            .footer-btn{
+                background: #F8F8F8;
+                border-radius: 8rpx;
+                width: 702rpx;
+                margin: 0 auto;
+            }
+        }
+
+
+    }
+    // .mask{
+    //     height: 100vh;
+    //     background-color: #000;
+    //     opacity: 0.6;
+    //     z-index: 100;
+    //     position: absolute;
+    //     width: 100%;
+    // }
+}
+@keyframes popShow {
+
+}

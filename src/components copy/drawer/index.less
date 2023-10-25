@@ -1,0 +1,72 @@
+.drawer-box {
+  touch-action: none;
+  position: fixed;
+  width: 100vw;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10001;
+  transition: all 0.2s;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.02), 0 0 8px 0 rgba(0, 0, 0, 0.04);
+  /** {
+    color: #333;
+    touch-action: none;
+  }*/
+  .drawer-header {
+    touch-action: none;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px 16px 0px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    flex-shrink: 0;
+  }
+  .drawer-close {
+    touch-action: none;
+    position: absolute;
+    right: 36px;
+    top: 30px;
+    font-weight: bold;
+  }
+  .drawer-content {
+    touch-action: none;
+
+    box-sizing: border-box;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 30px;
+    .drawer-content-scroll {
+      padding: 24px 36px;
+      width: auto; // 修复h5兼容问题
+    }
+  }
+  .drawer-bottom-box {
+    touch-action: none;
+    border-top: 1px solid #eee;
+    height: 136px;
+  }
+  .hide-bar-box {
+    touch-action: none;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    .hide-bar {
+      touch-action: none;
+      width: 80px;
+      height: 12px;
+      background: #ccc;
+      border-radius: 6px;
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.default-loading-spin-warp {
+  position: relative;
+  width: 60px;
+  height: 76px;
+  .default-loading-spin-item {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 23px;
+    border-radius: 8px 8px 0 0;
+    transform: scale(0.4);
+    animation-name: fadeG;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    opacity: 0.6;
+
+    &:nth-child(1) {
+      left: 0;
+      top: 28px;
+      animation-delay: 0.45s;
+      transform: rotate(-90deg);
+    }
+
+    &:nth-child(2) {
+      left: 8px;
+      top: 10px;
+      animation-delay: 0.6s;
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(3) {
+      left: 26px;
+      top: 4px;
+      animation-delay: 0.75s;
+      transform: rotate(0deg);
+    }
+
+    &:nth-child(4) {
+      right: 8px;
+      top: 10px;
+      animation-delay: 0.9s;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(5) {
+      right: 0;
+      top: 28px;
+      animation-delay: 1.05s;
+      transform: rotate(90deg);
+    }
+
+    &:nth-child(6) {
+      right: 8px;
+      bottom: 8px;
+      animation-delay: 1.2s;
+      transform: rotate(135deg);
+    }
+
+    &:nth-child(7) {
+      bottom: 0;
+      left: 26px;
+      animation-delay: 1.35s;
+      transform: rotate(180deg);
+    }
+
+    &:nth-child(8) {
+      left: 8px;
+      bottom: 8px;
+      animation-delay: 1.5s;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+@keyframes fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+.default-loading-text-warp {
+  width: 100%;
+  text-align: center;
+  .default-loading-text {
+    color: #2c58c6;
+    font-family: Arial;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    float: left;
+    animation: bounce_inTurnFadingTextG 1.4s infinite normal;
+
+    &:nth-child(1) {
+      animation-delay: 0.75s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.9s;
+    }
+    &:nth-child(3) {
+      animation-delay: 1.05s;
+    }
+    &:nth-child(4) {
+      animation-delay: 1.2s;
+    }
+    &:nth-child(5) {
+      animation-delay: 1.35s;
+    }
+    &:nth-child(6) {
+      animation-delay: 1.5s;
+    }
+    &:nth-child(7) {
+      animation-delay: 1.64s;
+    }
+  }
+}
+
+@keyframes bounce_inTurnFadingTextG {
+  0% {
+    color: #fff;
+    transform: scale(1);
+  }
+
+  100% {
+    color: #2c58c6;
+    transform: scale(0.9);
+  }
+}
+
+.default-time-loading-warp {
+  position: relative;
+  height: 78px;
+  width: 78px;
+  border-radius: 58px;
+  border: 3px solid rgb(0, 0, 0);
+}
+.default-time-loading-warp-icon1 {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  top: 2px;
+  left: 48%;
+  height: 37px;
+  width: 4px;
+  border-radius: 5px;
+  transform-origin: 50% 97%;
+  animation: grdAiguille 2.3s linear infinite;
+}
+
+.default-time-loading-warp-icon2 {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  top: 6px;
+  left: 48%;
+  height: 34px;
+  width: 4px;
+  border-radius: 5px;
+  transform-origin: 50% 94%;
+  animation: ptAiguille 13.8s linear infinite;
+}
+
+@keyframes grdAiguille {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ptAiguille {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

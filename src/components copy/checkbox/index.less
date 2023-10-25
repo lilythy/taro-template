@@ -1,0 +1,47 @@
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  margin: 16px 16px 16px 0;
+  .disabled{
+    color: #999999;
+    background: #eeeeee;
+  }
+
+  .modal-item-check{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #999999;
+  }
+  .checkbox-current{
+    border-color: #2f54eb;
+    background: #2f54eb;
+    &::after{
+      // content: '✓';
+      // content: '✔';
+      content: '\e66d';
+      font-family: 'iconfont';
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+  }
+  .modal-item-text{
+    margin-left: 10px;
+  }
+}
+.checkbox-wrap.checkbox-disable{
+  .modal-item-check{
+    background-color: #f5f5f5;
+    border-color: #d9d9d9!important;
+    cursor: not-allowed;
+  }
+  .checkbox-current{
+    &::after{
+      color: #B8B8B8;
+    }
+  }
+  .modal-item-text{
+    color: #00000040;
+    cursor: not-allowed;
+  }
+}
